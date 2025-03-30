@@ -35,12 +35,24 @@ cbar = plt.colorbar(label="Temperature (°C)")
 plt.title("Thermal Distribution")
 plt.show()
 ```
-## Color Scheme
-Position	RGB Values	Hex Code	Temperature
-0.0	(0.29, 0.0, 0.51)	#4B0082	-20°C
-0.3	(0.94, 0.97, 1.0)	#F0F8FF	5°C
-0.6	(0.20, 0.80, 0.20)	#32CD32	20°C
-1.0	(0.55, 0.0, 0.0)	#8B0000	40°C
+## Color Scheme Specification
+
+| Position | RGB Values           | Hex Code  | Temperature |
+|----------|----------------------|-----------|-------------|
+| 0.0      | (0.29, 0.0, 0.51)    | #4B0082   | -20°C       |
+| 0.3      | (0.94, 0.97, 1.0)    | #F0F8FF   | 5°C         |
+| 0.6      | (0.20, 0.80, 0.20)   | #32CD32   | 20°C        |
+| 1.0      | (0.55, 0.0, 0.0)     | #8B0000   | 40°C        |
+
+### Key Characteristics:
+1. **Cold Range (0.0-0.3):** Deep violet to icy blue-white
+2. **Mid Range (0.3-0.6):** Neutral transition through pale tones
+3. **Warm Range (0.6-1.0):** Vibrant green to danger-red
+
+### Technical Notes:
+- RGB values normalized to [0-1] range
+- Positions correspond to `vmin=-20` and `vmax=40` parameters
+- Hex codes validated for web/print compatibility
 
 ## Best Practices
 Set near vmin=-20 and vmax=40 for proper color scaling
