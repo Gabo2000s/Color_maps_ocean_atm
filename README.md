@@ -2,8 +2,6 @@
 
 A custom Matplotlib diverging colormap for scientific visualization, optimized for temperature data representation. Hosted on GitHub for easy integration.
 
-![Colormap Demo](https://raw.githubusercontent.com/Gabo2000s/Color_maps_ocean_atm/main/docs/demo.png)
-
 ## Key Features
 - **Smooth Transitions**: From deep violet (-20°C) to dark red (40°C)
 - **One-Step Installation**: Direct GitHub integration
